@@ -9,7 +9,12 @@ html {
 }
 
 body {
-    background-color: $bg-main;
+    background-image:
+            linear-gradient(rgba($bg-main, 0.85), rgba($bg-main, 0.85)),
+            url('/img/pexels-francesco-ungaro-998641.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
     color: $text-main;
     font-family: 'Inter', sans-serif;
 

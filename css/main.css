@@ -9,7 +9,10 @@ html {
 }
 
 body {
-  background-color: #0f172a;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url("/img/pexels-francesco-ungaro-998641.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
   color: #f1f5f9;
   font-family: "Inter", sans-serif;
 }
@@ -81,7 +84,7 @@ body {
 }
 
 .card {
-  background: #1e293b;
+  background: rgba(30, 41, 59, 0.45);
   border: 1px solid #334155;
   padding: 1.5rem;
   border-radius: 12px;
@@ -134,7 +137,7 @@ body {
 
 .pill {
   display: inline-block;
-  background: #0f172a;
+  background: rgba(15, 23, 42, 0.45);
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -147,7 +150,7 @@ body {
   top: 120%;
   right: 0;
   width: 240px;
-  background-color: #1e293b;
+  background-color: rgba(30, 41, 59, 0.45);
   border: 1px solid #334155;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
@@ -273,7 +276,7 @@ body {
 }
 
 .control-card {
-  background: #1e293b;
+  background: rgba(30, 41, 59, 0.45);
   border: 1px solid #334155;
   border-radius: 12px;
   padding: 1.5rem;
@@ -317,7 +320,7 @@ body {
 }
 .control-card__select {
   width: 100%;
-  background: #0f172a;
+  background: rgba(15, 23, 42, 0.45);
   color: #f1f5f9;
   border: 1px solid #334155;
   padding: 0.5rem;
@@ -337,7 +340,7 @@ body {
 }
 
 .footer {
-  background-color: rgb(26.5617977528, 36.3011235955, 52.2382022472);
+  background-color: rgba(26.5617977528, 36.3011235955, 52.2382022472, 0.45);
   border-top: 1px solid #334155;
   padding: 3rem 0;
   margin-top: auto;
@@ -431,8 +434,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(15, 23, 42, 0.75);
-  backdrop-filter: blur(10px);
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid #334155;
   padding: 0.75rem 0;
 }
