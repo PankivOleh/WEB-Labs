@@ -1,0 +1,16 @@
+.card {
+    background: $bg-card;
+    border: 1px solid $border;
+    padding: 1.5rem;
+    border-radius: $radius;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    &__name {
+        font-size: 1.25rem;
+    }
+}

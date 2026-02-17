@@ -1,0 +1,14 @@
+.investor {
+    &__details {
+        margin-bottom: 1rem;
+        color: $text-muted;
+
+        strong {
+            color: $text-main;
+        }
+    }
+
+    &__tags {
+        margin-bottom: 1.5rem;
+    }
+}

@@ -1,0 +1,106 @@
+.footer {
+    background-color: darken($bg-card, 2%); // Трохи темніший за картки
+    border-top: 1px solid $border;
+    padding: 3rem 0;
+    margin-top: auto; // Гарантія, що футер буде знизу
+
+    &__container {
+        max-width: $container-width; // Та сама змінна, що і для header/main
+        margin: 0 auto;
+        padding: 0 1.5rem;
+
+        display: flex;
+        justify-content: space-between;
+
+        // Адаптивність: на мобільному стає в одну колонку
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            text-align: center;
+        }
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &--end {
+            align-items: flex-end; // Притискаємо до правого краю
+
+            @media (max-width: 768px) {
+                align-items: center;
+            }
+        }
+    }
+
+    &__logo {
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    &__copy {
+        font-size: 0.875rem;
+        color: darken($text-muted, 10%);
+    }
+
+    // Навігація в футері
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    &__title {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        color: $text-main;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.05em;
+    }
+
+    &__link {
+        color: $text-muted;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+
+    // Версія та соцмережі
+    &__version {
+        font-family: monospace;
+        background: rgba(255, 255, 255, 0.05);
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        color: $text-muted;
+        margin-bottom: 0.5rem;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__social-link {
+        color: $text-muted;
+        font-size: 0.9rem;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+
+        &:hover {
+            color: $text-main;
+            border-bottom-color: $text-main;
+        }
+    }
+}

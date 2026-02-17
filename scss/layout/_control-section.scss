@@ -1,0 +1,80 @@
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.control-card {
+    background: $bg-card;
+    border: 1px solid $border;
+    border-radius: $radius;
+    padding: 1.5rem;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1rem;
+        color: $text-muted;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    // Input styling to look like data
+    &__input {
+        background: transparent;
+        border: none; // Сховати рамки
+        border-bottom: 2px solid transparent; // Підкреслення при фокусі
+        color: $text-main;
+        font-size: 2rem;
+        font-weight: 700;
+        width: 100%;
+        font-family: inherit;
+
+        &:focus {
+            outline: none;
+            border-bottom-color: $primary;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        &--success {
+            color: $success;
+        }
+
+        &--danger {
+            color: $danger;
+        }
+    }
+
+    &__select {
+        width: 100%;
+        background: $bg-main;
+        color: $text-main;
+        border: 1px solid $border;
+        padding: 0.5rem;
+        border-radius: 6px;
+        font-size: 1rem;
+    }
+
+    &__sub {
+        font-size: 0.85rem;
+        color: $text-muted;
+
+        .link {
+            color: $primary;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

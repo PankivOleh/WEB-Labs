@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startup Tycoon | Simulator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">🚀 Startup<span>Sim</span></div>
+
+        <nav class="nav">
+          <a href="#my-startup" class="nav__link nav__link--active"
+            >Мій стартап</a
+          >
+          <a href="#market" class="nav__link">Ринок</a>
+          <a href="#investors" class="nav__link">Інвестори</a>
+        </nav>
+
+        <div class="header__profile profile-menu">
+          <button
+            class="profile-menu__trigger"
+            id="profileBtn"
+            aria-expanded="false"
+          >
+            <span class="header__user">Олег</span>
+            <div class="header__avatar">O</div>
+          </button>
+
+          <div class="profile-dropdown" id="profileDropdown">
+            <div class="profile-dropdown__header">
+              <strong>Олег</strong>
+              <span>oleg@startup.sim</span>
+            </div>
+            <ul class="profile-dropdown__list">
+              <li>
+                <a href="#" class="profile-dropdown__link"> ⚙️ Налаштування </a>
+              </li>
+              <li><hr class="profile-dropdown__divider" /></li>
+              <li>
+                <a
+                  href="#"
+                  class="profile-dropdown__link profile-dropdown__link--danger"
+                >
+                  🚪 Вийти
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section id="my-startup" class="section">
+          <header class="section__header">
+            <h1 class="section__title">Панель управління</h1>
+            <div class="section__actions">
+              <button class="btn btn--primary">Зберегти зміни</button>
+            </div>
+          </header>
+          <section class="control-section">
+            <div class="metrics-grid">
+              <div class="control-card">
+                <div class="control-card__header">
+                  <span class="control-card__icon">🏷️</span>
+                  <span class="control-card__label">Назва стартапу</span>
+                </div>
+                <div class="control-card__body">
+                  <input
+                    type="text"
+                    id="name-card-input"
+                    class="control-card__input"
+                    style="
+                      background-color: #0f172a;
+                      border-radius: 4px;
+                      border: 1px solid #334155;
+                      font-size: 1rem;
+                      padding: 0.5rem;
+                    "
+                  />
+                </div>
+              </div>
+              <div class="control-card">
+                <div class="control-card__header">
+                  <span class="control-card__icon">👥</span>
+                  <span class="control-card__label">Працівники</span>
+                </div>
+                <div class="control-card__body">
+                  <input
+                    type="number"
+                    id="employee-card-input"
+                    class="control-card__input"
+                    value="12"
+                    min="1"
+                  />
+                </div>
+                <p class="control-card__sub">Команда розробки</p>
+              </div>
+
+              <div class="control-card control-card--accent">
+                <div class="control-card__header">
+                  <span class="control-card__icon">💰</span>
+                  <span class="control-card__label">Прибуток ($)</span>
+                </div>
+                <div class="control-card__body">
+                  <input
+                    type="number"
+                    id="profit-card-input"
+                    class="control-card__input control-card__input--success"
+                    value="14500"
+                  />
+                </div>
+                <p class="control-card__sub">Прогноз на місяць</p>
+              </div>
+
+              <div class="control-card">
+                <div class="control-card__header">
+                  <span class="control-card__icon">📉</span>
+                  <span class="control-card__label">Витрати ($)</span>
+                </div>
+                <div class="control-card__body">
+                  <input
+                    type="number"
+                    id="costs-card-input"
+                    class="control-card__input control-card__input--danger"
+                    value="8200"
+                  />
+                </div>
+                <p class="control-card__sub">Оренда та зарплати</p>
+              </div>
+
+              <div class="control-card">
+                <div class="control-card__header">
+                  <span class="control-card__icon">🏢</span>
+                  <span class="control-card__label">Офіси</span>
+                </div>
+                <div class="control-card__body">
+                  <select class="control-card__select" id="office-selsect">
+                    <option value="kyiv">Київ</option>
+                    <option value="lviv">Львів</option>
+                    <option value="warsaw">Варшава</option>
+                  </select>
+                </div>
+                <p class="control-card__sub">
+                  <a href="#" class="link">Додати офіс +</a>
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section id="market" class="section market-section">
+          <div class="section__header">
+            <h2 class="section__title">Аналіз конкурентів</h2>
+          </div>
+
+          <div class="grid-list">
+            <article class="card">
+              <div class="card__top">
+                <h3 class="card__name">NovaSoft</h3>
+                <span class="tag tag--danger">Конкурент</span>
+              </div>
+              <div class="stats-row">
+                <div class="stat">
+                  <span class="stat__label">Частка ринку</span>
+                  <span class="stat__val">15%</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__label">Ріст</span>
+                  <span class="stat__val stat__val--up">▲ 12%</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__top">
+                <h3 class="card__name">PayFast</h3>
+                <span class="tag tag--warning">Нішевий гравець</span>
+              </div>
+              <div class="stats-row">
+                <div class="stat">
+                  <span class="stat__label">Частка ринку</span>
+                  <span class="stat__val">4%</span>
+                </div>
+                <div class="stat">
+                  <span class="stat__label">Ріст</span>
+                  <span class="stat__val stat__val--down">▼ 2%</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="investors" class="section">
+          <div class="section__header">
+            <h2 class="section__title">Інвестори</h2>
+          </div>
+
+          <div class="grid-list">
+            <article class="card investor">
+              <h3 class="card__name">Sequoia Capital</h3>
+              <p class="investor__details">
+                Об'єм фонду: <strong>$800M</strong>
+              </p>
+              <div class="investor__tags">
+                <span class="pill">SaaS</span>
+                <span class="pill">AI</span>
+              </div>
+              <button class="btn btn--outline btn--sm">Зв'язатись</button>
+            </article>
+
+            <article class="card investor">
+              <h3 class="card__name">Y Combinator</h3>
+              <p class="investor__details">
+                Об'єм фонду: <strong>$500M</strong>
+              </p>
+              <div class="investor__tags">
+                <span class="pill">Early Stage</span>
+                <span class="pill">Tech</span>
+              </div>
+              <button class="btn btn--outline btn--sm">Зв'язатись</button>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__col">
+          <div class="footer__logo">Startup<span>Sim</span></div>
+          <p class="footer__copy">&copy; 2026. Всі права захищено.</p>
+        </div>
+
+        <nav class="footer__nav">
+          <a href="#my-startup" class="footer__link">Мій стартап</a>
+          <a href="#market" class="footer__link">Ринок</a>
+          <a href="#investors" class="footer__link">Інвестори</a>
+        </nav>
+
+        <div class="footer__col footer__col--end">
+          <span class="footer__version">Версія: v1.0.0 Beta</span>
+          <div class="footer__socials">
+            <a
+              href="https://github.com/PankivOleh/WEB-Labs"
+              class="footer__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+            <a
+              href="#"
+              class="footer__social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Telegram</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./js/profile-menu-script.js"></script>
+</html>

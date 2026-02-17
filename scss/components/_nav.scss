@@ -1,0 +1,27 @@
+.nav {
+    display: flex;
+    gap: 0.5rem;
+
+    @media (max-width: 768px) {
+        display: none; // Спрощено для мобільної версії
+    }
+
+    &__link {
+        color: $text-muted;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        transition: 0.2s;
+        font-weight: 500;
+
+        &:hover {
+            color: $text-main;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        &--active {
+            color: $text-main;
+            background: rgba($primary, 0.15);
+        }
+    }
+}

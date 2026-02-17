@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: $bg-main;
+    color: $text-main;
+    font-family: 'Inter', sans-serif;
+
+}
+.main {
+    padding: 2rem 0;
+}
+
+.container {
+    max-width: $container-width;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    margin-bottom: 4rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &__title {
+        font-size: 1.75rem;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+}

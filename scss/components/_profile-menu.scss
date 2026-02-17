@@ -1,0 +1,26 @@
+.profile-menu {
+    position: relative; // Це "якір" для випадаючого вікна
+}
+
+// 2. Кнопка (Тригер)
+.profile-menu__trigger {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+
+    // Щоб текст і аватар виглядали як раніше
+
+
+
+
+    &:hover,
+    &:focus {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+}

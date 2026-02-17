@@ -1,0 +1,16 @@
+.tag {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 700;
+
+    &--danger {
+        color: $danger;
+        background: rgba($danger, 0.1);
+    }
+
+    &--warning {
+        color: orange;
+        background: rgba(orange, 0.1);
+    }
+}

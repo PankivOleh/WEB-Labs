@@ -1,0 +1,29 @@
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        font-size: 0.8rem;
+        color: $text-muted;
+        margin-bottom: 0.25rem;
+    }
+
+    &__val {
+        font-weight: 600;
+
+        &--up {
+            color: $success;
+        }
+
+        &--down {
+            color: $danger;
+        }
+    }
+}
