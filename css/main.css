@@ -65,9 +65,10 @@ body {
 .btn--primary {
   background: #3b82f6;
   color: white;
+  border: 1px solid #334155;
 }
 .btn--primary:hover {
-  background: #2563eb;
+  background: rgba(30, 41, 59, 0.25);
 }
 .btn--outline {
   background: transparent;
@@ -150,7 +151,7 @@ body {
   top: 120%;
   right: 0;
   width: 240px;
-  background-color: rgba(30, 41, 59, 0.45);
+  background-color: rgba(30, 41, 59, 0.99);
   border: 1px solid #334155;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);

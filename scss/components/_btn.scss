@@ -10,9 +10,10 @@
     &--primary {
         background: $primary;
         color: white;
-
+        border: 1px solid $border;
         &:hover {
             background: $primary-hover;
+           
         }
     }
 
